@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>জরুরি সেবা ডিরেক্টরি</title>
+    <title>জরুরি সেবার ডিরেক্টরি</title>
     <!-- FavIcon link -->
     <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
     <!-- FavIcon link -->
@@ -19,22 +19,24 @@
       referrerpolicy="no-referrer"
     />
     <!-- Font Awesome cdn link -->
-    <!-- google font inter link -->
+    <!-- google font inter and hind madurai link -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <!-- google font inter link -->
+    <!-- google font inter and hind madurai link -->
   </head>
   <body>
     <!-- Header Section Starts here -->
     <header>
       <!-- Navbar Section Starts here -->
-      <nav class="flex lg:flex-row flex-col justify-between items-center py-5 px-14 lg:gap-0 gap-4">
+      <nav
+        class="flex lg:flex-row flex-col justify-between items-center py-5 px-14 lg:gap-0 gap-4"
+      >
         <div class="left_side flex items-center gap-2">
-          <div class="img_box w-12">
+          <div class="nav_logo_box w-12">
             <img src="./assets/logo.png" alt="nav_logo" />
           </div>
           <h2 class="nav_title text-[#006747] font-extrabold text-xl leading-5">
@@ -42,20 +44,28 @@
             Service
           </h2>
         </div>
-        <div class="right_side flex justify-center items-center gap-5 font-['Inter']">
-          <div class="heart_div_box flex items-center bg-[#ecfff0] py-2 px-4 rounded-3xl gap-2">
+        <div
+          class="right_side flex justify-center items-center gap-5 font-['Inter']"
+        >
+          <div
+            class="heart_div_box flex items-center bg-[#ecfff0] py-2 px-4 rounded-3xl gap-2"
+          >
             <span class="heart_count text-[16px] font-black">0</span>
             <div class="heart_img_div w-6">
               <img src="./assets/heart.png" alt="heart_logo" />
             </div>
           </div>
-          <div class="coins_div_box flex items-center bg-[#ecfff0] py-2 px-4 rounded-3xl gap-2">
+          <div
+            class="coins_div_box flex items-center bg-[#ecfff0] py-2 px-4 rounded-3xl gap-2"
+          >
             <span class="coin_count text-[16px] font-black">100</span>
             <div class="coin_img_box w-6">
               <img src="./assets/coin.png" alt="coin_logo" />
             </div>
           </div>
-          <div class="copy_div_box flex items-center bg-[#00A63E] py-2 px-4 rounded-3xl gap-2 text-white">
+          <div
+            class="copy_div_box flex items-center bg-[#00A63E] py-2 px-4 rounded-3xl gap-2 text-white"
+          >
             <span class="copy_count text-[16px] font-semibold">0</span>
             <div class="copy_title_box font-semibold">
               <p>Copy</p>
@@ -64,6 +74,22 @@
         </div>
       </nav>
       <!-- Navbar Section Ends here -->
+      <!-- Banner Section Starts here -->
+      <section
+        class="banner_section bg-[linear-gradient(90deg,rgba(1,49,34,1),rgba(0,103,71,1)_50%,rgba(1,50,35,1)_100%)] text-white flex justify-center items-center"
+      >
+        <div class="banner_content_box font-['Hind_Madurai'] flex flex-col justify-center items-center py-5">
+          <div class="banner_logo_box w-[92px]">
+            <img src="./assets/logo-dark.png" alt="banner_logo" class="w-full" />
+          </div>
+          <h1 class="text-[40px] font-semibold">জরুরি সেবার ডিরেক্টরি</h1>
+          <p class="font-semibold text-[20px]">
+            Government Emergency Services at Your Fingertip – A Project by
+            Government of the People’s Republic of Bangladesh
+          </p>
+        </div>
+      </section>
+      <!-- Banner Section Ends here -->
     </header>
     <!-- Header Section Ends here -->
   </body>
