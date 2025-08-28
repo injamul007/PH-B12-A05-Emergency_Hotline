@@ -406,8 +406,40 @@
           <!-- emergency_card_9 -->
          </div>
         </section>
-        <aside id="call_history container" class="lg:col-span-3 col-span-full border-2 border-red-300 rounded-xl bg-white">
-          
+        <aside id="call_history container" class="lg:col-span-3 col-span-full rounded-xl bg-white shadow-md">
+          <div class="call_history_box w-[90%] mx-auto">
+            <div class="call_history_title flex items-center justify-between py-5">
+            <div class="flex items-center gap-2">
+              <span class="fa-regular fa-clock text-gray-500 text-[22px]"></span>
+              <h2 class="text-[22px] font-semibold">Call History</h2>
+            </div>
+            <div class="bg-[#00A63E] text-white rounded-3xl active:scale-95">
+              <button class="clear_history_btn py-2 px-4 font-semibold cursor-pointer ">Clear</button>
+            </div>
+          </div>
+          <!-- this will come dynamically -->
+            <div class="call_history_box flex flex-col gap-3 pb-4">
+              <div class="call_history_info bg-[#f2f2f2] flex items-center justify-between lg:px-2 px-4 py-3 rounded-2xl">
+            <div class="">
+              <h2 class="font-bold lg:text-[15px]">জাতীয় জরুরি সেবা</h2>
+              <p class="text-gray-600 lg:text-[16px] text-[20px] font-semibold">999</p>
+            </div>
+            <div class=" text-gray-600 font-semibold rounded-xl">
+                <span class="lg:text-[14px]">11:36:58 AM</span>
+            </div>
+          </div>
+          <div class="call_history_info bg-[#f2f2f2] flex items-center justify-between lg:px-2 px-4 py-3 rounded-2xl">
+            <div class="">
+              <h2 class="font-bold lg:text-[15px]">জাতীয় জরুরি সেবা</h2>
+              <p class="text-gray-600 lg:text-[16px] text-[20px] font-semibold">999</p>
+            </div>
+            <div class=" text-gray-600 font-semibold rounded-xl">
+                <span class="lg:text-[14px]">11:36:58 AM</span>
+            </div>
+          </div>
+            </div>
+          <!-- this will come dynamically -->
+          </div>
         </aside>
       </section>
     </main>
