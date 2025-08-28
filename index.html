@@ -33,10 +33,11 @@
     <header>
       <!-- Navbar Section Starts here -->
       <nav
-        class="flex lg:flex-row flex-col justify-between items-center py-5 px-14 lg:gap-0 gap-4"
+        class="flex lg:flex-row md:flex-row flex-col justify-between items-center py-5 px-14 lg:gap-0 gap-4"
       >
-        <div class="left_side flex items-center gap-2">
-          <div class="nav_logo_box w-12">
+        <div class="left_side flex items-center">
+          <div class="flex items-center lg:gap-2 md:gap-2 gap-2">
+            <div class="nav_logo_box w-12">
             <img src="./assets/logo.png" alt="nav_logo" />
           </div>
           <h2 class="nav_title text-[#006747] font-extrabold text-xl leading-5">
@@ -44,8 +45,9 @@
             Service
           </h2>
         </div>
+          </div>
         <div
-          class="right_side flex justify-center items-center gap-5 font-['Inter']"
+          class="right_side flex justify-center items-center lg:gap-5 md:gap-5 gap-18 font-['Inter']"
         >
           <div
             class="heart_div_box flex items-center bg-[#ecfff0] lg:py-2 py-1 lg:px-4 px-2 rounded-3xl gap-2"
@@ -110,10 +112,10 @@
     <main class="main_section bg-[#f5fff6] flex justify-center items-center py-8">
        <section
         id="emergency_hotline_container"
-        class="emergency_hotline_section w-[96%] mx-auto grid grid-cols-12 gap-5"
+        class="emergency_hotline_section lg:w-[96%] w-[90%] mx-auto grid grid-cols-12 gap-5"
       >
-        <section id="emergency_card_container" class=" col-span-9">
-          <div class="emergency_card_box grid grid-cols-3 gap-5">
+        <section id="emergency_card_container" class=" lg:col-span-9 col-span-12">
+          <div class="emergency_card_box grid lg:grid-cols-3 grid-cols-1 gap-5">
           <!-- emergency_card_1 -->
           <div class="emergency_card flex flex-col gap-3 p-5 h-fit shadow-md rounded-xl bg-white transform hover:scale-[1.02] transition duration-200 ease-linear">
             <div class="logo_and_icon_div flex items-center justify-between">
@@ -404,7 +406,7 @@
           <!-- emergency_card_9 -->
          </div>
         </section>
-        <aside id="call_history" class=" col-span-3 border-2 border-red-300 rounded-xl bg-white">
+        <aside id="call_history container" class="lg:col-span-3 col-span-full border-2 border-red-300 rounded-xl bg-white">
           
         </aside>
       </section>
