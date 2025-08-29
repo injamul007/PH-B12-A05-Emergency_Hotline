@@ -56,8 +56,23 @@ getElement('emergency_hotline_container').addEventListener('click', function(e) 
           callHistoryShowDiv.append(newDivElement);
   } else if(e.target.className.includes('clear_history_btn')) {
     getElement('call_history_show_div').innerText = '';
+    
+  } else if(e.target.className.includes('copy_btn')) {
+    const EmergencyCopyBtn = e.target;
+
+    const emergencyServiceNumber = EmergencyCopyBtn.parentNode.parentNode.children[2].children[0].innerText;
+
+    alert(`নম্বর কপি হয়েছে: ${emergencyServiceNumber}`);
+
+    navigator.clipboard.writeText(emergencyServiceNumber);
+
+    const copyCount = getElement('copy_count').innerText;
+
+    const currentCopyCount = Number(copyCount) + 1;
+    
+    getElement('copy_count').innerText = currentCopyCount;
   }
-  
+
 
 
 })
