@@ -14,5 +14,17 @@ getElement('emergency_hotline_container').addEventListener('click', function(e) 
     const heartCount = getElement('nav_heart_count').innerText;
     const currentHeartCount = Number(heartCount) + 1;
     getElement('nav_heart_count').innerText = currentHeartCount;
+  } else if(e.target.className.includes('call_btn')) {
+    const EmergencyCallBtn = e.target;
+
+    const emergencyServiceSubtitle = EmergencyCallBtn.parentNode.parentNode.children[1].children[1].innerText;
+
+    const emergencyServiceNumber = EmergencyCallBtn.parentNode.parentNode.children[2].children[0].innerText;
+
+    alert(`📞 Calling ${emergencyServiceSubtitle} ${emergencyServiceNumber}...`);
+    
   }
+
+
+
 })
