@@ -54,9 +54,10 @@ getElement('emergency_hotline_container').addEventListener('click', function(e) 
           </div>`;
 
           callHistoryShowDiv.append(newDivElement);
+          
   } else if(e.target.className.includes('clear_history_btn')) {
     getElement('call_history_show_div').innerText = '';
-    
+
   } else if(e.target.className.includes('copy_btn')) {
     const EmergencyCopyBtn = e.target;
 
@@ -72,7 +73,4 @@ getElement('emergency_hotline_container').addEventListener('click', function(e) 
     
     getElement('copy_count').innerText = currentCopyCount;
   }
-
-
-
-})
+});
